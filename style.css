@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+body{
+    background-color: #222;
+}
+.card{
+    width:90%;
+    max-width:470px;
+    color:#5f1414;
+    text-align: center;
+    margin:100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    background-color: #ae4a4a;
+    background:linear-gradient(145deg, #6b1313, #927b7b);
+}
+.search{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.search input {
+    width: 80%;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: #f4f4f4;
+    color: #5f1414;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.search input:focus{
+    border-color: #ae4a4a; 
+}
+.search input:hover{
+    cursor:text;
+}
+.search button {
+    border: none;
+    border-radius: 50%;
+    padding: 13px;
+    background: #f4f4f4;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.search button:hover{
+    background: #d1c5c5;
+    transform: scale(1.1);
+}
+.search button img{
+    width: 16px;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 20px;
+}
+.weather h1{
+    font-size:80px;
+    font-weight: 500;
+    color: #f4f4f4;
+}
+.weather h2{
+    font-size: 40px;
+    font-weight: 500;
+    color: #f4f4f4;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col{
+    display:flex;
+    align-items:center;
+    text-align: left;
+
+}
+.col img{
+    width: 70px;
+    margin-right: 10px;
+}
+.wind, .humidity{
+    font-size: 15px;
+    font-weight: 500;
+    color: #f4f4f4;
+}
+p{
+    font-size: 15px;
+    font-weight: 500;
+    color: #f4f4f4;
+}
+.weather {
+    display: none; /* Hide the weather section by default */
+}
+.error{
+    text-align: left;
+    color: #f4f4f4;
+    margin-left: 20px;
+    margin-top: 10px;
+    display:none;
+}
+
